@@ -8,14 +8,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div style={{backgound: "#414141"}}>
+    <div style={{ background: "#141414" }}>
       <Menu />
-
       <BannerMain
         videoTitle={startData.categorias[0].videos[0].titulo}
         url={startData.categorias[0].videos[0].url}
         videoDescription={"What is Front-end development? How to get a job."}
-        
       />
 
       <Carousel
@@ -44,7 +42,6 @@ function App() {
       />
 
       <Footer/>
-
     </div>
 
   );
