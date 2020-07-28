@@ -7,10 +7,23 @@ function AddCategory() {
     return (
       <PageBase>
         <h1>Add Category</h1>
+        <form>
+          <label>
+            Nome da Categoria:
+            <input
+              type="text"
+            />
+          </label>
+
+          <button>
+            Cadastrar
+          </button>
+        </form>
         <Link to='/'>
           Home
         </Link>
       </PageBase>
+
     )
   };
 
