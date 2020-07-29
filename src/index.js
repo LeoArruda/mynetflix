@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import AddVideo from './pages/add/video';
 import AddCategory from './pages/add/category';
+import Fourohfour from './pages/404';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -14,7 +15,7 @@ ReactDOM.render(
       <Route path='/add/video' component={AddVideo} />
       <Route path='/add/category' component={AddCategory} />
 
-      <Route component={() => (<div>Page 404</div>)} />
+      <Route component={Fourohfour} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/img/leoflix-logo.png';
+import Logo from '../../assets/img/logo.png';
 import './Menu.css';
 import Button from '../Button';
 //import ButtonLink from './components/ButtonLink';
