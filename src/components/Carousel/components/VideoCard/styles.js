@@ -28,4 +28,11 @@ export const VideoCardContainer = styled.a`
   &:not(:first-child) {
     margin-left: 20px;
   }
+
+  .card-wrapper:hover,
+  .card-wrapper:focus,
+  .card-wrapper:active {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
 `;

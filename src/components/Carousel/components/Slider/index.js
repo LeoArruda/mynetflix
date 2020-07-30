@@ -37,7 +37,7 @@ export const SliderItem = styled.li`
     object-fit: cover;
   }
   &:hover {
-      zoom: 1.05;
+      transform: scale(1.015);
     }
 `;
 
