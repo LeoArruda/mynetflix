@@ -32,7 +32,7 @@ function AddCategory() {
 
   useEffect(() => {
     console.log('hello effect');
-    const URL_DB = 'http://localhost:8080/categories';
+    const URL_DB = 'https://mynetflix2020.herokuapp.com/categories';
 
     fetch(URL_DB)
       .then(async (serverResponse) => {
