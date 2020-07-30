@@ -1,16 +1,16 @@
 {
-    "categorias": [
+    "categories": [
         {
             "id": 1,
-            "nome": "Front End",
-            "descricao": "Uma categoria bacanuda",
-            "cor": "#cbd1ff"
+            "name": "Front End",
+            "description": "Uma categoria bacanuda",
+            "color": "#cbd1ff"
         },
         {
             "id": 2,
-            "nome": "Back End",
-            "descricao": "Uma outra categoria bacanuda",
-            "cor": "#cbd1ff"
+            "name": "Back End",
+            "description": "Uma outra categoria bacanuda",
+            "color": "#cbd1ff"
         }
     ]
 }

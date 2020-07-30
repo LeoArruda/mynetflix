@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageBase from '../../../components/PageBase';
 import FormField from '../../../components/FormField';
@@ -30,6 +30,21 @@ function AddCategory() {
     );
   }
 
+  useEffect(() => {
+    console.log('hello effect');
+    const URL_DB = 'http://localhost:8080/categories';
+
+    fetch(URL_DB)
+      .then(async (serverResponse) => {
+        const response = await serverResponse.json();
+        setCategories([
+          ...response,
+        ]);
+      });
+  }, [
+
+  ]);
+
   return (
     <PageBase>
       <h1>
@@ -38,7 +53,6 @@ function AddCategory() {
       </h1>
       <form onSubmit={function handleSubmit(eventInfo) {
         eventInfo.preventDefault();
-        console.log('Tried to submit the form');
         setCategories([
           ...categories, values,
         ]);
